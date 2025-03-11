@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筆跡認証モデル実験サイト</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="user_id">ユーザID</label>
+        <input type="number" id="user_id" name="user_id">
+        <label for="signature">署名してください</label>
+        <canvas id="canvas" width="100" height="400"></canvas>
+        <button id="submit_for_login">ログイン</button>
+    </form>
+    <script src="signature.js"></script>
+</body>
+</html>
